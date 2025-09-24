@@ -37,18 +37,6 @@ public class MemberServiceV3_2 {
         });
 
         // 트랜잭션 시작
-//        TransactionStatus status = transactionManager.getTransaction(new DefaultTransactionDefinition());
-//        try{
-//            // 비지니스 로직
-//            blzLogic(fromId, toId, money);
-//
-//            // 성공시 커밋
-//            transactionManager.commit(status);
-//        } catch (Exception e) {
-//            // 실패시 롤백
-//            transactionManager.rollback(status);
-//            throw new IllegalStateException(e);
-//        }
     }
 
     private void blzLogic(String fromId, String toId, int money) throws SQLException {
