@@ -26,7 +26,6 @@ public class MemberServiceV3_2 {
     }
 
     public void accountTransfer(String fromId, String toId, int money) throws SQLException {
-
         // 트랜잭션 시작 : 해당 함수 안에서 성공하면 commit, 실패하면 rollback을 처리해준다.
         txTemplate.executeWithoutResult((status) -> {
             try {
@@ -35,8 +34,6 @@ public class MemberServiceV3_2 {
                 throw new IllegalStateException(e);
             }
         });
-
-        // 트랜잭션 시작
     }
 
     private void blzLogic(String fromId, String toId, int money) throws SQLException {
