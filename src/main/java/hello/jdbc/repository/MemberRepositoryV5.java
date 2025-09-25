@@ -12,13 +12,9 @@ import javax.sql.DataSource;
 public class MemberRepositoryV5 implements MemberRepository {
 
     private final JdbcTemplate template;
-//    private final DataSource dataSource;
-//    private final SQLExceptionTranslator exTranslator;
 
     public MemberRepositoryV5(DataSource dataSource) {
         this.template = new JdbcTemplate(dataSource);
-//        this.dataSource = dataSource;
-//        this.exTranslator = new SQLErrorCodeSQLExceptionTranslator(dataSource);
     }
 
     @Override
