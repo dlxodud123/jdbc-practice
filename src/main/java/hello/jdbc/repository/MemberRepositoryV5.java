@@ -7,7 +7,7 @@ import org.springframework.jdbc.core.RowMapper;
 
 import javax.sql.DataSource;
 
-// JdbcTemplate 사용 
+// JdbcTemplate 사용
 @Slf4j
 public class MemberRepositoryV5 implements MemberRepository {
 
